@@ -1,6 +1,6 @@
 Thermal Printer Controller Hardware
 Anthe is a Wireless Thermal Printer controller over WiFi and Bluetooth. It is based on ESP32-C3-FH4 Microcontroller. 
-![alt text](https://github.com/tanmoydutta/thermalprintercontroller/blob/main/images/device.jpg?raw=true)
+![alt text](https://github.com/tanmoydutta/thermalprintercontroller/blob/main/images/device.png?raw=true)
 
 Features include - 
 - Programmable WiFi and Bluetooth Connectivity for Thermal Printer
@@ -16,4 +16,4 @@ Features include -
 
 Build your own Printer driver using Adafruit Thermal Printer library and extend connectivity over WiFi and Bluetooth.
 
-![alt text](https://github.com/tanmoydutta/thermalprintercontroller/blob/main/images/oshw_license.png?raw=true)
+![alt text](https://github.com/tanmoydutta/thermalprintercontroller/blob/main/images/oshw_license-2.png?raw=true)
