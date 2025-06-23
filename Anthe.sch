@@ -189,23 +189,6 @@
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
 <packages>
-<package name="RN-ANT" urn="urn:adsk.eagle:footprint:6240183/1" library_version="2">
-<wire x1="-4.3942" y1="-0.2032" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="4.3434" x2="-1.7526" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="4.3434" x2="-1.7526" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="6.858" x2="-4.3942" y2="6.858" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="6.858" x2="-4.3942" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="9.0678" x2="-1.7526" y2="9.0678" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="9.0678" x2="-1.7526" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-1.7526" y1="11.5824" x2="-4.3942" y2="11.5824" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="11.5824" x2="-4.3942" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="13.7922" x2="-2.7432" y2="13.7922" width="0.508" layer="1"/>
-<wire x1="0" y1="2.159" x2="-4.3942" y2="2.159" width="0.508" layer="1"/>
-<wire x1="-4.3942" y1="2.159" x2="-4.3942" y2="4.3434" width="0.508" layer="1"/>
-<wire x1="-4.191" y1="0" x2="-1.27" y2="0" width="0.889" layer="1"/>
-<smd name="GND" x="-1.143" y="0" dx="2.54" dy="0.889" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="FEED" x="0" y="2.159" dx="0.0254" dy="0.0254" layer="1" stop="no" thermals="no" cream="no"/>
-</package>
 <package name="C0402" urn="urn:adsk.eagle:footprint:6239683/1" library_version="2">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip</description>
@@ -4184,11 +4167,6 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="RN-ANT" urn="urn:adsk.eagle:package:6240828/1" type="box" library_version="2">
-<packageinstances>
-<packageinstance name="RN-ANT"/>
-</packageinstances>
-</package3d>
 <package3d name="C0402" urn="urn:adsk.eagle:package:6240340/1" type="box" library_version="2">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip</description>
@@ -5480,21 +5458,6 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="ANT" urn="urn:adsk.eagle:symbol:6239604/1" library_version="2">
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="2.54" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
-<pin name="FEED" x="0" y="0" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="GND" x="2.54" y="0" visible="pad" length="short" direction="pas" rot="R90"/>
-</symbol>
 <symbol name="C-US" urn="urn:adsk.eagle:symbol:6239482/1" library_version="2">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
@@ -5558,25 +5521,6 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ANTENNA" urn="urn:adsk.eagle:component:6241096/1" prefix="ANT" library_version="2">
-<gates>
-<gate name="G$1" symbol="ANT" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="RN-ANT">
-<connects>
-<connect gate="G$1" pin="FEED" pad="FEED"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6240828/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="C-US" urn="urn:adsk.eagle:component:6240982/1" prefix="C" uservalue="yes" library_version="2">
 <description>&lt;B&gt;CAPACITOR&lt;/B&gt;, American symbol</description>
 <gates>
@@ -10366,6 +10310,101 @@ DIN A4, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="WiFi_PCB_Trace_Antenna">
+<packages>
+<package name="WIFI_ANTENNA">
+<dimension x1="0" y1="0" x2="-0.06" y2="4.6" x3="-5.95" y3="2.3" textsize="0.254" layer="47" dtype="vertical" width="0.01"/>
+<dimension x1="0.16" y1="4.6" x2="0.19" y2="5.1" x3="22.61" y3="4.85" textsize="0.254" layer="47" dtype="vertical" width="0.01"/>
+<dimension x1="0" y1="0" x2="0.45" y2="-0.24" x3="0.225" y3="5.61" textsize="0.254" layer="47" dtype="horizontal" width="0.01"/>
+<dimension x1="0" y1="0" x2="-0.45" y2="-0.27" x3="-0.225" y3="5.38" textsize="0.254" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="-0.45" y1="0" x2="0.45" y2="4.6" layer="1"/>
+<dimension x1="-0.45" y1="5.1" x2="4.55" y2="5.36" x3="2.05" y3="4.35" textsize="0.254" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="-0.45" y1="4.6" x2="4.55" y2="5.1" layer="1"/>
+<dimension x1="-0.45" y1="0" x2="-0.65" y2="0.5" x3="4.3" y3="0.25" textsize="0.254" layer="47" dtype="vertical" width="0.01"/>
+<dimension x1="0.45" y1="0" x2="1.85" y2="-0.92" x3="1.15" y3="6.58" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<dimension x1="1.85" y1="-0.01" x2="2.35" y2="-0.37" x3="2.1" y3="5.8" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="1.85" y1="0" x2="2.35" y2="4.6" layer="1"/>
+<dimension x1="4.55" y1="5.41" x2="4.05" y2="5.42" x3="4.3" y3="-0.76" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<dimension x1="4.55" y1="4.6" x2="3.51" y2="1.96" x3="5.62" y3="3.28" textsize="1.27" layer="47" dtype="vertical" width="0.01"/>
+<rectangle x1="4.05" y1="1.96" x2="4.55" y2="4.6" layer="1"/>
+<dimension x1="4.55" y1="1.96" x2="6.55" y2="1.49" x3="5.55" y3="5.77" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<dimension x1="4.05" y1="1.96" x2="3.7" y2="2.46" x3="22.56" y3="2.21" textsize="1.27" layer="47" dtype="vertical" width="0.01"/>
+<dimension x1="6.55" y1="1.54" x2="7.05" y2="1.64" x3="6.8" y3="5.57" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="4.55" y1="1.96" x2="7.05" y2="2.46" layer="1"/>
+<rectangle x1="6.55" y1="2.46" x2="7.05" y2="5.1" layer="1"/>
+<dimension x1="6.55" y1="5.1" x2="9.25" y2="5.36" x3="7.9" y3="1.19" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="7.05" y1="4.6" x2="9.25" y2="5.1" layer="1"/>
+<dimension x1="9.25" y1="1.32" x2="8.75" y2="1.32" x3="9" y3="5.42" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="8.75" y1="1.96" x2="9.25" y2="4.6" layer="1"/>
+<dimension x1="9.25" y1="1.69" x2="11.25" y2="1.22" x3="10.25" y3="5.5" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<dimension x1="11.75" y1="1.41" x2="11.25" y2="1.41" x3="11.5" y3="5.51" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<dimension x1="14.95" y1="1.34" x2="14.45" y2="1.34" x3="14.7" y3="5.29" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<dimension x1="15.27" y1="4.6" x2="14.21" y2="0.66" x3="10.87" y3="2.63" textsize="1.27" layer="47" dtype="vertical" width="0.01"/>
+<rectangle x1="9.25" y1="1.96" x2="11.75" y2="2.46" layer="1"/>
+<rectangle x1="11.25" y1="2.46" x2="11.75" y2="5.1" layer="1"/>
+<dimension x1="14.95" y1="-2.2" x2="14.45" y2="-2.2" x3="14.7" y3="1.75" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="13.45" y1="0.66" x2="13.95" y2="4.6" layer="1"/>
+<smd name="P$1" x="2.1" y="0.25" dx="0.5" dy="0.5" layer="1"/>
+<smd name="P$2" x="0" y="0.25" dx="0.5" dy="0.5" layer="1"/>
+<dimension x1="11.25" y1="5.21" x2="13.95" y2="5.47" x3="12.6" y3="1.3" textsize="1.27" layer="47" dtype="horizontal" width="0.01"/>
+<rectangle x1="11.75" y1="4.6" x2="13.95" y2="5.1" layer="1"/>
+</package>
+<package name="WIFI_ANTENNA_INVERTED">
+<rectangle x1="20.5" y1="0.01" x2="21.4" y2="4.61" layer="1"/>
+<rectangle x1="16.4" y1="4.61" x2="21.4" y2="5.11" layer="1"/>
+<rectangle x1="18.6" y1="0.01" x2="19.1" y2="4.61" layer="1"/>
+<rectangle x1="13.9" y1="1.97" x2="14.4" y2="4.61" layer="1"/>
+<rectangle x1="14.4" y1="1.97" x2="16.9" y2="2.47" layer="1"/>
+<rectangle x1="16.4" y1="2.47" x2="16.9" y2="5.11" layer="1"/>
+<rectangle x1="7.5" y1="4.61" x2="9.7" y2="5.11" layer="1"/>
+<rectangle x1="9.2" y1="1.97" x2="9.7" y2="4.61" layer="1"/>
+<rectangle x1="9.7" y1="1.97" x2="12.2" y2="2.47" layer="1"/>
+<rectangle x1="11.7" y1="2.47" x2="12.2" y2="5.11" layer="1"/>
+<rectangle x1="7" y1="0.67" x2="7.5" y2="4.61" layer="1"/>
+<smd name="P$1" x="18.85" y="0.26" dx="0.5" dy="0.5" layer="1"/>
+<smd name="P$2" x="20.95" y="0.26" dx="0.5" dy="0.5" layer="1"/>
+<rectangle x1="12.2" y1="4.61" x2="14.4" y2="5.11" layer="1"/>
+<rectangle x1="7" y1="4.61" x2="7.5" y2="5.11" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="WIFI_ANTENNA">
+<wire x1="-2.54" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<pin name="FEED" x="0" y="-10.16" length="middle" direction="in" rot="R90"/>
+<pin name="GND" x="5.08" y="-5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCB_ANTENNA_WIFI">
+<gates>
+<gate name="G$1" symbol="WIFI_ANTENNA" x="0" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="WIFI_ANTENNA">
+<connects>
+<connect gate="G$1" pin="FEED" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WIFI_ANTENNA_INVERTED" package="WIFI_ANTENNA_INVERTED">
+<connects>
+<connect gate="G$1" pin="FEED" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10376,7 +10415,6 @@ DIN A4, landscape with extra doc field</description>
 </class>
 </classes>
 <parts>
-<part name="ANT1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="ANTENNA" device="" package3d_urn="urn:adsk.eagle:package:6240828/1"/>
 <part name="C5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0402" package3d_urn="urn:adsk.eagle:package:6240340/1" value="1pF"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U4" library="AP2112K-3.3TRG1" deviceset="AP2112K-3.3TRG1" device=""/>
@@ -10469,6 +10507,7 @@ DIN A4, landscape with extra doc field</description>
 <part name="R4" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R0402" package3d_urn="urn:adsk.eagle:package:6240564/1" value="10K"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
+<part name="U$3" library="WiFi_PCB_Trace_Antenna" deviceset="PCB_ANTENNA_WIFI" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10528,7 +10567,6 @@ DIN A4, landscape with extra doc field</description>
 <text x="858.52" y="114.3" size="1.778" layer="94">Mechanical Fastner Holes</text>
 </plain>
 <instances>
-<instance part="ANT1" gate="G$1" x="891.54" y="154.94" smashed="yes"/>
 <instance part="C5" gate="G$1" x="891.54" y="144.78" smashed="yes">
 <attribute name="NAME" x="892.556" y="145.415" size="1.778" layer="95"/>
 <attribute name="VALUE" x="892.556" y="140.589" size="1.778" layer="96"/>
@@ -10855,6 +10893,7 @@ DIN A4, landscape with extra doc field</description>
 <attribute name="SHEET" x="901.7" y="46.99" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="833.12" y="64.77" size="2.54" layer="94"/>
 </instance>
+<instance part="U$3" gate="G$1" x="891.54" y="162.56" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10968,11 +11007,10 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="ANT1" gate="G$1" pin="GND"/>
-<wire x1="894.08" y1="154.94" x2="894.08" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="894.08" y1="149.86" x2="899.16" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="899.16" y1="149.86" x2="899.16" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="899.16" y1="157.48" x2="899.16" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="896.62" y1="157.48" x2="899.16" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
@@ -11471,13 +11509,13 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="ANT1" gate="G$1" pin="FEED"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="891.54" y1="154.94" x2="891.54" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="891.54" y1="152.4" x2="891.54" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 <wire x1="891.54" y1="149.86" x2="891.54" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="889" y1="149.86" x2="891.54" y2="149.86" width="0.1524" layer="91"/>
 <junction x="891.54" y="149.86"/>
+<pinref part="U$3" gate="G$1" pin="FEED"/>
 </segment>
 </net>
 </nets>
