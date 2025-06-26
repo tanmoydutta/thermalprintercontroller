@@ -19,4 +19,12 @@ Features include -
 
 Build your own Printer driver using Adafruit Thermal Printer library and extend connectivity over WiFi and Bluetooth.
 
+This is an OSHWA certified hardware - 
+<p align="center">
+  <a href="https://certification.oshwa.org/nl000031.html">
+    <img src="/images/certification-mark-NL000031-wide.png?raw=true" alt="OSHWA" width="350" title="OSHWA Certification">
+  </a>
+</p>
+
+
 ![alt text](https://github.com/tanmoydutta/thermalprintercontroller/blob/main/images/oshw_license-2.png?raw=true)
